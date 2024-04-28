@@ -3,8 +3,12 @@ package com.penta.accounts.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-@Entity
+@Entity@Getter@Setter@ToString@AllArgsConstructor
 public class Accounts extends BaseEntity{
 
     @Column(name = "customer_id")
